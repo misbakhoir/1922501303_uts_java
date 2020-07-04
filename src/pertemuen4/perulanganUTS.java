@@ -19,20 +19,17 @@ public class perulanganUTS {
         System.out.println("          indomaret           ");
         System.out.println("==============================");
         
-        System.out.println(" nama barang");
+        System.out.println("  jumlah barang yang akan di beli");
         int beli = input.nextInt();
         
         for(int i = 1; i<=beli; i++)
         {
         
-
-
-           
-    System.out.println( "  nama barang  "+i+ "=");
+    System.out.println( "  nama barang ke- "+i+ ":");
     String nama = input.next();
-    System.out.println(" nama barang  "+i+ "=");
+    System.out.println(" harga barang  ke-"+i+ ":");
     int harga = input.nextInt();
-    System.out.println("  nama barang  "+i+ "=");
+    System.out.println("  jumlah barang ke- "+i+ ":");
     int jumlah = input.nextInt();
     System.out.println("");
     
@@ -43,7 +40,7 @@ public class perulanganUTS {
     System.out.println("=============================");
     
     int total,totalb,diskon =0;
-    total = harga = jumlah;
+    total = harga * jumlah;
     System.out.println("total belanja = RP " + total);
     if (total>100000){
         diskon = total/5;
