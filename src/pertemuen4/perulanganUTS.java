@@ -20,16 +20,19 @@ public class perulanganUTS {
         System.out.println("==============================");
         
         System.out.println(" nama barang");
-        String beli = input.nextLine();
-        int i = 0;
+        int beli = input.nextInt();
+        
+        for(int i = 1; i<=beli; i++)
+        {
+        
 
 
            
-    System.out.println( " nama barang ke- "+i+ "=");
+    System.out.println( "  nama barang  "+i+ "=");
     String nama = input.next();
-    System.out.println(" harga "+i+ "=");
+    System.out.println(" nama barang  "+i+ "=");
     int harga = input.nextInt();
-    System.out.println(" jumlah "+i+ "=");
+    System.out.println("  nama barang  "+i+ "=");
     int jumlah = input.nextInt();
     System.out.println("");
     
@@ -44,9 +47,20 @@ public class perulanganUTS {
     System.out.println("total belanja = RP " + total);
     if (total>100000){
         diskon = total/5;
+    } else{diskon = 0; }
+    
+            System.out.println("diskon = Rp." + diskon);
+            totalb = total - diskon;
+            System.out.println(" Total bayar = Rp." + totalb);
+            System.out.println("uang bayar = Rp.");
+            int bayar = input.nextInt();
+            
+            int kembali = bayar - totalb;
+            System.out.println("uang kembali = Rp." + kembali);
+            System.out.println("==============================");
+            System.out.println("terima kasih");
+            System.out.println("selamat belanja kembali");
     }
     }
     
-}
-
 }
