@@ -9,7 +9,7 @@ package pertemuan_11;
  *
  * @author HP
  */
-public class contoh_array2dimensi {
+public class array_2dimensi {
     public static void main(String[] args) {
         System.out.println("array 2 dimensi");
         int matriks [][] = {{11,54},
